@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- 头部盒子 -->
+    <div class="one">
+        <div class="two" id="a"><h2>数字文化产品流量管控平台</h2></div>
+        <div class="two" id="b">
+            <div class="four" id="yemian">首页</div>
+            <div class="four">关于我们</div>
+            <div class="four">投资者关系</div>
+            <div class="four">个人问卷分析</div>
+            <div class="four">产品中心</div>
+            <div class="four">联系我们</div>
+        </div>
+    </div>
+    <!--主体大盒子 -->
+    <div class="one" id="classes" style="display: block;">
+        <!-- 第一个页面的两层盒子 -->
+        <div class="five" id="zhuti">
+            <div class="six"><img src="./img/keji.png" class="tupian"></div>
+        </div>
+        <div class="five">
+            <div class="seven">
+                <div class="eight">
+                    <h4>产品中心</h4>
+                    <ul>
+                        <li>可视化分析</li>
+                        <li>社区论坛</li>
+                        <li>链接分享</li>
+                    </ul>
+                </div>
+                <div class="eight">
+                    <h4>个人问卷分析</h4>
+                    <ul>
+                        <li>用户标签化</li>
+                        <li>产品标签化</li>
+                        <li>用户流量数据统计分析</li>
+                        <li>产品推荐</li>
+                        <li>数据流量的二次利用</li>
+                    </ul>
+                </div>
+                <div class="eight">
+                    <h4>平台结构图</h4>
+                    <img src="./img/jiegou.png" class="tu">
+                </div>
+                <div class="eight">、
+                    <h4 style="margin-top: 0px;">关于我们</h4>
+                    <p>团队建立的数字流量运营系统——蚌云超链。是通过优化传统的爬虫技术对超链接进行Ajax...</p>
+                    <button style="margin-left: 150px;">更多</button>
+                </div>
+                <script>
+                    
+                    
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="one" id="classes" style="display: none;">
+        <p>团队建立的数字流量运营系统——蚌云超链。是通过优化传统的爬虫技术对超链接进行Ajax(javascrip技术相关)进行数据采集，构建了用户评链接分享等数据流量信息分析指标体系及其赋值方法以及利用K-Means聚类法建立了面向产品社区的动态用户需求Kano模型用于保证用户的实时更新，实现用户画像全面，和行为预测精准的目标。最后以社会网络为主要特征建立社群，以内容、超链接、流量为社群底层基础性元素进行交互发展，实施多元主体生态化鼓励个体用户及企业与社交媒体等都能够在“蚌云超链”平台里建立自己的生态发展圈，最终打造私域流量池社群。根据私域流量池能够全面覆盖关于数字文化产品的评论、链接的分享、点击率、收藏量等产生数据流量的行为监控，可进行数据的实时更新，公司利用本平台还可以实现对客户数字资产的同频监测以及与客户的同频交流，实现数据挖掘的更大化，数据流量转化的更大化，流量红利获取最大化，为企业带来更多的经济效益。</p>
+    </div>
+    <div class="one" id="classes" style="display: none;">
+        <div class="ef">
+            <p>本项目初期总投资120万元。蚌云超链以专利、非专利技术作价50万入股，第一年初吸收风险投资A40万入股，第二年初计划吸收投资B30万。具体投资规模与结构如表</p>
+            <img src="./img/guquan.png" style="margin-left: 300px">
+        </div>
+    </div>
+    <div class="one" id="classes" style="display: none;">
+        <input type="text" placeholder="请输入关键字" style="margin-left: 400px;">
+        <input type="file" multiple>
+        <button>搜索</button>
+
+    </div>
+    <div class="one" id="classes" style="display: none;">
+        <div class="sd" style="display: flex;">
+            <div class="as">
+                <img src="./img/1.gif" class="h">
+            </div>
+            <div class="as">
+                <img src="./img/2.png" class="h">
+            </div>
+        </div>
+        <div class="sd" style="display: flex;">
+            <div class="aw">
+                <img src="./img/3.jpg" class="h">
+            </div>
+            <div class="aw">
+                <img src="./img/4.gif"class="h">
+            </div>
+        </div>
+    </div>
+    <div class="one" id="classes"style="display: none;">
+        <img src="./img/5.png" style="margin-left: 150px;">
+    </div>
+    <script>
+        var lists=document.querySelectorAll(".four")
+        var but=document.querySelector('button')
+        var boxs=document.querySelectorAll("#classes")
+        console.log(boxs);
+        for(var i=0;i<lists.length;i++){
+            lists[i].setAttribute('index',i)
+            lists[i].onclick=function(){
+                for (var i=0;i<lists.length;i++){
+                    lists[i].idName="";
+                }
+                this.idName='yemian'
+                var index=this.getAttribute('index')
+                for (var i=0;i<boxs.length;i++){
+                    boxs[i].style.display='none'
+                }
+                boxs[index].style.display='block'
+            }
+        }
+        but.onclick=function(){
+            for (var i=0;i<boxs.length;i++){
+                boxs[i].style.display='none'
+            }
+            boxs[1].style.display='block'
+        }
+    </script>
+</body>
+</html>

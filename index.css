@@ -1,0 +1,59 @@
+.one{
+    display: flex;
+    flex: 2;
+}
+.two{
+    display: flex;
+    flex: 2;
+}
+h2 {
+    /* height: 20px; */
+    /* text-align: center; */
+    margin-left: 50px;
+    flex: 5
+}
+#b{
+    margin-top: 30px;
+    margin-left: 50px;
+    flex: 4;
+}
+.four{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#zhuti{
+    height: 360px;
+    width: 1250px;
+    background:url(./img/pugongy.webp) no-repeat;
+    background-size: 100% 100%;
+}
+.tupian{
+    width: 400px;
+    height: 300px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.seven{
+    height: 200px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: palegoldenrod; */
+    display: flex;
+}
+.eight{
+    width: 200px;
+    /* display: flex; */
+}
+.tu{
+    width: 200px;
+}
+.ef{
+    margin-left: auto;
+    margin-right: auto;
+}
+.h{
+    width: 500px;
+    height: 300px;
+    margin-left: 50px;
+}
